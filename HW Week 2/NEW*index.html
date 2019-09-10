@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <scriipt src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Class 2:Grid, Layout and Containers (Container-regular, Container-fluid)</title>
+  </head>
+  <style>
+      
+.container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+.item {
+    flex-grow: <number>;
+    flex-shrink: <number>;
+}
+
+      </style>
+
+  <body>
+        <header>
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-info">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+      </head>
+
+    <h1> Class 2 Practice with Grid, Layout and Containers</h1>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="col-12 col-md alert-danger">
+                    <h3>col 1</h3>
+                    <a href="https://news.artnet.com/app/news-upload/2017/04/Degas_Four-Ballet-Dancers-on-Stage_Brazil-256x256.jpg"><img src="dancers1.jpg" width="256" height="256" title="manydancers" alt="Flower"></a>
+                </div>
+                    <div class="col-12 col-md alert-info">
+                        <h3>col 2</h3>
+                        <a href="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/L-1250-00-000003-WZ-PYR.tif&CNT=1&JTL=2,4"><img src="dancers2.jpg" width="256" height="256" title="moredancers" alt=" 2 dancers"></a>
+        
+                    </div>
+                    <div class= "col-12 col-md alert-success">
+                        <h3>col 3</h3>
+                        <a href="https://news.artnet.com/app/news-upload/2016/03/Edgar-Degas-6-256x256.jpg"><img src="dancers3.jpg" width="256" height="256" title="otherdancers" alt="onlydancer"></a>
+                    </div>
+                        <div class="col-12 col-md alert-primary">
+                            <h3>col 4</h3>
+                            <a href="  https://media.xogrp.com/images/fetch/https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F81696T7GkoL._SR500%2C500_US380_.jpg/transform~rs_w.256?fallback=5fa481ef-43bb-43ae-aab3-665614c9d774"><img src="dancers4.jpg" width="256" height="256" title="otherdancers" alt="onlydancers"></a>
+                        </div>
+                            <div class="col-12 col-md alert-warning">
+                                <h3>col 5</h3>
+                                <a href="https://media.xogrp.com/images/fetch/https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F61etV4BFZFL._SR500%2C500_US380_.jpg/transform~rs_w.256?fallback=5fa481ef-43bb-43ae-aab3-665614c9d774"><img src="dancers5.jpg" width="256" height="256" title="otherdancers" alt="onlydancer"></a>
+                            </div>
+                            <div class="col-12 col-md alert-warning">
+                                    <h3>col 6</h3>
+                                    <a href="https://b3h2.scene7.com/is/image/BedBathandBeyond/184486964703114p?$imagePLP$&wid=256"><img src="dancers6.jpg" width="256" height="256" title="othermoredancers" alt="onlydancer"></a>
+
+                                </div>
+                 
+
+                   
+
+                    <!--Main Concept: Fluid-Container-->
+
+                    <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 order-md-2 btn-info">
+                                    <h3>Fluid Col 1</h3>
+                                </div>
+                                <div class="col-12 col-md-3 col-lg-4 order-md-1 btn-warning">
+                                    <h3>Fluid Col 2</h3>
+                                </div>
+                                <div class="col-12 col-md-3 col-lg-4 order-md-3 btn-danger">
+                                    <h3>Fluid Col 3</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+
+
+                
+            </div>
+        </div>
+
+        </div>
+
+
+  </body>
+</html>

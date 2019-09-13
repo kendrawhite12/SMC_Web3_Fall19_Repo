@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   <!--Google font-->
+   <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <scriipt src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Modified Assigment: Grid, Layout and Containers (Class 2 Homework) </title>
+  </head>
+  <style>
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+.container-fluid {
+width:300px;
+height:300px;
+}
+.navbar {
+    padding-left: 50px;
+    font-family: 'Inconsolata', monospace;
+    
+}
+.bg-info {
+    background-color: #000000;
+}
+h1 {
+    font-family: 'Inconsolata', monospace;
+}
+h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18pt;
+    text-align: center;
+    font-weight:700px;
+}
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-weight:600px;
+    font-size: 16px;
+    text-align: center;
+}
+h4 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    text-align: center;
+}
+h5 {
+    
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    text-align: center;
+} 
+.margin {
+    margin:100px;
+}
+.padding {
+    padding:100px;
+}
+.container-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+      </style>
+
+  <body>
+        <header>
+                <!-- Nav -->
+                <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+
+                    <img src="KW.jpg" alt="KWlogo" height="100px" width="100px">
+                   
+            
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              
+                                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="padding"></div>
+            <strong><h2>Virtual Degas Gallery</h2>
+
+            
+      </head>
+
+    
+    <!-- Practice with .container using a 1x6 grid that stacks/resolves into 2x3 grid on larger screens (HELP NEEDED HERE)-->
+    <div class="container">
+        <div class="container-center">
+        <div class="margin">
+        <div class="row">
+            <div class="column">
+    
+                <div class="col-xs-12 col-md-12  alert-danger">
+                    <h3>Femme nue assise ca. 1879</h3>
+                    <a href="https://news.artnet.com;/app/news-upload/2017/04/Degas_Four-Ballet-Dancers-on-Stage_Brazil-256x256.jpg"><img src="dancers1.jpg" width="256" height="256" title="manydancers" alt="firstdancer"></a>
+                <h4>Medium: Pastel and estompe over charcoal on paper</h4>
+                </div>
+                    <div class="col-xs-12 col-md-12 alert-info">
+                            <h3>Ballet Dancers on Stage ca. 1885</h3>
+                        <a href="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/L-1250-00-000003-WZ-PYR.tif&CNT=1&JTL=2,4"><img src="dancers2.jpg" width="256" height="256" title="moredancers" alt=" 2dancers"></a>
+                        <h4>Medium: Oil on Canvas</h4>    
+        
+                    </div>
+                    <div class= "col-xs-12 col-md-12 alert-success">
+                        <h3> Before the Ballet ca. 1890 </h3>
+                        <a href="https://news.artnet.com/app/news-upload/2016/03/Edgar-Degas-6-256x256.jpg"><img src="dancers3.jpg" width="256" height="256" title="otherdancers" alt="onlydancer"></a>
+                        <h4>Medium: Oil on Canvas</h4>  
+                    </div>
+                        <div class="col-xs-12 col-md-12  alert-primary">
+                            <h3>The Dance Lesson ca. 1879</h3>
+                            <a href="  https://media.xogrp.com/images/fetch/https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F81696T7GkoL._SR500%2C500_US380_.jpg/transform~rs_w.256?fallback=5fa481ef-43bb-43ae-aab3-665614c9d774"><img src="dancers4.jpg" width="256" height="256" title="otherdancers" alt="onlydancers"></a>
+                            <h4>Medium: Oil on Canvas</h4>  
+                        </div>
+                            <div class="col-xs-12 col-md-12 alert-warning">
+                                <h3>One Dancer On Stage ca. 1877</h3>
+                                <a href="https://media.xogrp.com/images/fetch/https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F61etV4BFZFL._SR500%2C500_US380_.jpg/transform~rs_w.256?fallback=5fa481ef-43bb-43ae-aab3-665614c9d774"><img src="dancers5.jpg" width="256" height="256" title="otherdancers" alt="onlydancer"></a>
+                                <h4>Medium: Pastel</h4>  
+                            </div>
+                            <div class="col-xs-12 col-md-12 alert-info">
+                                    <h3>L’Étoile (The Star) ca. 1886</h3>
+                                    <a href="https://b3h2.scene7.com/is/image/BedBathandBeyond/184486964703114p?$imagePLP$&wid=256"><img src="dancers6.jpg" width="256" height="256" title="othermoredancers" alt="onlydancer"></a>
+                                    <h4>Medium: Pastel</h4>     
+                                </div>
+
+                            
+                 
+
+                   
+
+                    
+
+     <!--Practice .container-fluid -->
+<div class="padding"></div>
+                        <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-4 col-lg-4 order-md- alert-info">
+                                        <h3>1st Fluid Col</h3>
+                                        <a href="  https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/L-1250-00-000003-WZ-PYR.tif&CNT=1&JTL=2,4"><img src="dancers6.jpg" width="256" height="256" title="othermoredancers" alt="adancer"></a> 
+                                    </div>
+                                    <div class="col-xs-4 col-md-4 col-lg-4 order-md- alert-success">
+                                        <h3>2nd Fluid Col </h3>
+                                        <a href="  https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/L-1250-00-000003-WZ-PYR.tif&CNT=1&JTL=2,4"><img src="dancers7.jpg" width="256" height="256" title="adancer" alt="onedancer"></a>
+                                    </div>
+                                    <div class="col-4 col-md-4 col-lg-4 order-md- alert-primary">
+                                        <h3>3rd Fluid Col </h3>
+                                        <a href=" https://barnesfoundation-collection.imgix.net/tiles/5085/2048,2048,2048,2048/256,/0/color.jpg"><img src="dancers8.jpg" width="256" height="256" title="dancernew" alt="newdancer"></a>
+                                        <div class="row">
+                                     <div class="col-xs-4 col-md-4 col-lg-4 order-md- alert-info">
+                                                <h3>4th Fluid Col</h3>
+                                                <a href="  https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/L-1250-00-000003-WZ-PYR.tif&CNT=1&JTL=2,4"><img src="dancers6.jpg" width="256" height="256" title="othermoredancers" alt="adancer"></a> 
+                                            </div>
+                                            <div class="col-xs-4 col-md-4 col-lg-4 order-md- alert-success">
+                                                <h3>5th Fluid Col </h3>
+                                                <a href="  https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/L-1250-00-000003-WZ-PYR.tif&CNT=1&JTL=2,4"><img src="dancers7.jpg" width="256" height="256" title="adancer" alt="onedancer"></a>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4 col-lg-4 order-md- alert-primary">
+                                                <h3>6th Fluid Col </h3>
+                                                <a href=" https://barnesfoundation-collection.imgix.net/tiles/5085/2048,2048,2048,2048/256,/0/color.jpg"><img src="dancers8.jpg" width="256" height="256" title="dancernew" alt="newdancer"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </main>
+
+
+
+                
+            </div>
+        </div>
+
+        </div>
+
+  </body>
+</html>

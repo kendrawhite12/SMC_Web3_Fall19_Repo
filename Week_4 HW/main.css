@@ -4,7 +4,7 @@ h1 {
     font-family: 'Anonymous Pro', monospace;
     font-weight:900px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 70px;
     padding-bottom: 75px;
 }
 p {
@@ -29,6 +29,12 @@ p {
 .custom-navbar {
     color: #C3D9FF !important;
     background-color: whitesmoke;
+}
+.img-center {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
 }
 fieldset { 
     display: block;

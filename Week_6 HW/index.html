@@ -1,0 +1,224 @@
+<!doctype html>
+ <html lang="en">
+
+ <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+     <!--Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Lora&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+     <!--JS plugin-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  
+
+     <link rel="stylesheet" href="main.js">
+     <link rel="stylesheet" href="main.css">
+     <title>WEEK 4 HOMEWORK</title>
+    </head>
+ 
+    <nav class="navbar navbar navbar-dark bg-primary"
+            <a class="navbar-brand" href="#">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQGsR-6N9ot0ra8po6npn-fSNUlGPUfnsTEljYg_eR9uIiIhql" width="100" height="100" alt="">
+            </a>
+          </nav>
+          <img src=" https://banktruth.org/reviews/chase-bank/chase-bank-logo.svg" width="400px" height="400" class="img-center" alt="">
+
+<!-- Button trigger modal -->
+<button type="button" class="btn-modal btn-dark" data-toggle="modal" data-target="#exampleModal">Sign Up</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Sign up to subscribe to our mailing list</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p class="modalp"id="pmodal">Sign up to recieve notifications about special promotion and events at your local Chase.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
+        <button type="button" class="btn btn-primary">Continue to Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<form>
+<form action"#" method="post" id="formid">
+
+
+  <h1>CHECKOUT FORM</h1>
+  <p>Please fill out the following indicated fields in form below</p>
+  <div>
+ <fieldset>
+          
+  <div class="container">
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationDefault01"><p>First name</p></label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="First" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationDefault02"><p>Last name</p></label>
+        <input type="text" class="form-control" id="validationDefault02" placeholder="Last" required>
+<div>
+        <div class="dropdown">
+            <button class="dropbtn">Select City</button>
+            <div class="dropdown-content" required>
+              <a href="#">Malibu</a>
+              <a href="#">Pacific Palisades</a>
+              <a href="#">Santa Monica</a>
+              <a href="#">Brentwood</a>
+              <a href="#">Westwood</a>
+              <a href="#">Hollywood</a>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<select id="dropdown-content">
+
+    <option value="1">Malibu</option>
+    <option value="2" selected="selected">Pacific Palisades</option>
+    <option value="3">Santa Monica</option>
+    <option value="4">Brentwood</option>
+    <option value="5">Westwood</option>
+    <option value="6">Hollywood</option>
+  </select>
+
+
+  <div class="Shipping">
+    <div class="col-md-4 mb-3">
+        <div>
+        <label for="validationDefaultShipping"><p>Shipping Address</p></label>
+        <input type="text" class="form-control" id="ShippingAddress" placeholder="Shipping Address" required>
+      </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03"><p>City</p></label>
+        <input type="text" class="form-control" id="ShippingCity" placeholder="City" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault04"><p>State</p></label>
+        <input type="text" class="form-control" id="ShippingState" placeholder="State" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05"><p>Zip</p></label>
+        <input type="text" class="form-control" id="ShippingZip" placeholder="Zip" required>
+      </div>
+    </div>
+</div>
+
+<input type="checkbox" onclick="SetBilling(this.checked);"/> Same as Shipping
+
+
+  <div class="Billing">
+    <div class="col-md-4 mb-3">
+        <div>
+        <label for="validationDefaultBilling"><p>Billing Address</p></label>
+        <input type="text" class="form-control" id="BillingAddress" placeholder="Billing Address" required>
+      </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03"><p>City</p></label>
+        <input type="text" class="form-control" id="BillingCity" placeholder="City" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault04"><p>State</p></label>
+        <input type="text" class="form-control" id="BillingState" placeholder="State" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05"><p>Zip</p></label>
+        <input type="text" class="form-control" id="BillingZip" placeholder="Zip" required>
+      </div>
+    </div>
+</div>
+
+<div>
+    <div class="col-md-4 mb-3">
+            <label for="validationDefaultShipping"><p>Name on card</p></label>
+            <input type="text" class="form-control" id="validationDefault10" placeholder="Name on Card" required>
+          </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03"><p>Credit Card Number</p></label>
+            <input type="text" class="form-control" id="validationDefault11" placeholder="####-####-####-####" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04"><p>Expiration Date</p></label>
+            <input type="text" class="form-control" id="validationDefault12" placeholder="2/23" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05"><p>CVV</p></label>
+            <input type="text" class="form-control" id="validationDefault13" placeholder="CVV" required>
+          </div>
+        </div>
+    </div>
+
+    <button type="submit" btn class="btn btn-lg btn-primary center-btn" value="Submit" name="subnewtide" id="subnewtide" disabled="disabled">Submit</button> 
+
+   
+</fieldset>
+  </form>
+
+ <!-- JS CLIENT-SIDE VALIDATION-->
+ 
+<script type="text/javascript">  
+
+  
+  function SetBilling(checked) {  
+            if (checked) {  
+                      document.getElementById('BillingAddress').value = document.getElementById('ShippingAddress').value;   
+                      document.getElementById('BillingCity').value = document.getElementById('ShippingCity').value;   
+                      document.getElementById('BillingState').value = document.getElementById('ShippingState').value;   
+                      document.getElementById('BillingZip').value = document.getElementById('ShippingZip').value;   
+                     
+            } else {  
+                      document.getElementById('BillingAddress').value = '';   
+                      document.getElementById('BillingCity').value = '';   
+                      document.getElementById('BillingState').value = '';   
+                      document.getElementById('BillingZip').value = '';   
+                 
+            }  
+  }  
+
+
+var e = document.getElementById("dropdown-content");
+var strUser = e.options[e.selectedIndex].value;
+
+
+ 
+jQuery("input[type='text']").on("keyup", function () {
+  if (jQuery(this).val() != "" ) {
+      if (jQuery("#titlenewtide").val() != '')
+      {
+          jQuery("#subnewtide").removeAttr("disabled");
+      }
+  } else {
+      jQuery("#subnewtide").attr("disabled", "disabled");
+  }
+});
+
+
+
+</script>
+
+</body>
+
+</html>

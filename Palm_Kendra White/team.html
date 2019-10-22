@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+
+<!-- MOBILE FIRST-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/site/templates/styles/main.css">
+  
+<!--Google font-->
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-2.0.2.js'></script>
+    
+    
+<script>
+ 
+function openNav() {
+document.getElementById("mySidebar").style.width = "250px";
+document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidebar").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+}
+
+$(".alert").alert()
+
+</script>
+
+<style>
+.sidebar {
+height: 87%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #C0C0FF;
+font-family: 'Noto Serif JP', serif;
+font-weight: 400px;
+color: #000;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.padding-cards{
+padding-top:25px;
+padding-bottom:25px;
+}
+.sidebar a {
+padding: 10px 10px 10px 10px;
+font-size: 20px;
+font-weight: 400px;
+color: #f1f1f1;
+display: block;
+transition: 0.3s;
+}  
+.sidebar a:hover {
+color:#000;
+font-weight: 400px;
+font-family: 'Noto Serif JP', serif;
+}
+
+  
+.sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+.dropbtn {
+size: 5px 5px 5px 5px;
+color:#C0C0FF;
+font-size: 20px;
+text-decoration: #000;
+font-family: 'Noto Serif JP', serif;
+display: inline-block;  
+}
+
+.img-center {
+margin-left:auto;
+margin-right:auto;
+display:block;
+}
+
+.card {
+   margin: 0 auto; /* Added */
+float: none; /* Added */
+margin-bottom: 10px; /* Added */
+}
+.center-cards {
+margin-left: auto;
+margin-right: auto;
+display: block;
+
+}
+.openbtn {
+font-size: 20px;
+cursor: pointer;
+background-color: #C0C0FF;
+color: #f1f1f1;
+border: none;
+float: right; 
+}
+
+.navbar {
+margin:0px;
+padding-left: 0px;
+font-family: 'Noto Serif JP', serif;
+font-weight: 900;
+font-size: 22px;
+background-color:#C0C0FF;
+color:#C0C0FF;
+}
+.
+
+
+.btn {
+font-family: 'Noto Serif JP', serif;
+font-size: 18px;
+color: #000;
+background-color: #C0C0FF;
+border:#C0C0FF
+}
+.btn-center{
+width:25%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+.li {
+font-family: 'Noto Serif JP', serif;
+font-size: 18px;
+}
+.about-center-text {
+margin-left:auto;
+margin-right:auto;
+display: block;
+}
+.navbar-brand {
+padding-top:100px;
+width: 380px;
+height: 395px;
+padding-left: 30px;
+padding-right: 30px;
+display: block;
+margin-left: auto;
+margin-right: auto;         
+}
+
+.btn {
+font-family: 'Noto Serif JP', serif;
+font-size: 18px;
+color: whitesmoke;
+background-color: #C0C0FF;
+border:#C0C0FF
+}
+.btn-center{
+width:25%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+.center-logo {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+.padding-logo {
+padding-top: 0px;
+padding-bottom: 0px;
+}
+.padding-button {
+padding-top: 20px;
+padding-bottom: 20px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+margin-top:25px;
+height: 120%;
+width: 100%;
+background-color: #ECE1DD;
+}
+body {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+.card {
+padding-right: 10px;
+padding-left: 10px;
+padding-bottom: 15px;
+
+
+}
+h1 {
+font-family: 'Noto Serif JP', serif;
+font-size: 36px;
+}
+
+h3 {
+font-weight: 900px;
+margin-top:55px;
+margin-bottom:25px; 
+padding-bottom:20px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+font-family: 'Noto Serif JP', serif;
+text-align: center;
+font-size: 72px;
+}
+
+
+h4 {
+font-weight: 900px;
+margin-top:55px;
+margin-bottom:25px; 
+padding-bottom:20px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+font-family: 'Noto Serif JP', serif;
+text-align: center;
+font-size: 72px;
+}
+
+
+h5 {
+font-family: 'Questrial', sans-serif;
+font-size: 20px;
+font-weight:900;
+}
+
+p {
+font-family: 'Noto Serif JP', serif;
+margin-left:20px;
+margin-right: 20px;
+font-size: 17px;
+margin-right: 8px;
+margin-left: 8px;
+line-height: 1.6;
+
+font-size: 18px;
+text-align: left;
+width: 95%;
+}
+.responsive {
+width: 100%;
+height: auto;
+}
+        
+/* Background image */
+.jumbotron {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-shadow: 2px 2px #000;
+}
+.card {
+margin-top:50px;
+}
+.lead span {
+  color: orange;
+  font-weight: bold;
+}
+
+.bg-cover {
+background-size: cover;
+color: white;
+background-position: center center;
+position: relative;
+z-index: -2;
+background-image: url()
+}
+
+.overlay {
+background-color: #000;
+opacity: 0.5;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: -1;
+}
+.container-fluid {
+width: 100vw;
+display: flex;
+height: 1000px;
+}
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+        
+ </style>
+
+<div class="alert alert-primary" role="alert" style="background-color:#C0C0FF; text-align: center; font-family:'Noto Serif JP', serif; border:#C0C0FF;  border-radius: 0px;">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              View our Lookbook and shop our newest sustainability line and summer destination styles.
+             
+              
+</div>
+
+ 
+
+
+<body>
+        <header>
+        <title>OUR TEAM</title>
+
+  
+<body>
+        <header>
+            
+    <div>
+        <div class="container"></div>
+        <div class="padding-logo"></div>
+        <br>
+
+       
+                
+         <nav class="navbar-brand" class="img-responsive">
+         <img src="palm-logo.png" alt=logo class="img-responsive">
+        </div>
+        <p><a class="btn btn-secondary btn-center" href="https://www.palmswimwear.com" role="button">View the Lookbook &raquo;</a></p>
+    </div>
+      
+     
+                <nav class="navbar navbar-expand-lg fixed-bottom text-light navbar-dark">
+  
+                
+            <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="team.html">Team</a>
+                    <a href="contact.html">Contact</a>
+                   
+              
+                </div>
+              
+                <div id="main">
+                      <button class="openbtn" onclick="openNav()">☰</button>  
+                  </div>
+                
+                    <div class=superdiv>
+                
+                          <div class="mobile-nav">
+                            
+                                  
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                                  </div>
+                              
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+   
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="team.html">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </nav>
+            </header>
+            
+              
+
+  
+                <!-- Jumbotron IMGS-->
+
+                <div class="jumbotron-fluid py-3 py-md-5 mb-5"
+                style="background: url(http://prnet_production.s3.amazonaws.com/photos/images/000/011/034/large/Guest_Dorothy_Day_Brighdie_Grounds_Guest.jpg?1556766812) center no-repeat; background-size: cover">
+                <div class="container-fluid">
+                </div>
+            </div>
+
+            
+<main role="main">
+<div class="container">
+<h3 class="text-center">Our Team</h3>
+
+                    
+<div class="about-center-text">
+
+<p>Palm founders Dorothy Day and Brighdie Grounds (centerd) are making waves in the fashion space and on the philanthropic front. Having been friends and previously business partners for over a decade, Dorothy Day and Brighdie Grounds officially launched their swimwear brand Palm in 2016.
+<br>
+<br>
+
+When they first met, the women bonded over a mutual love for surfing and fashion, and they eventually started a lifestyle magazine together. A passion for merging their interests later evolved into creating Palm. Currently Palm has opened two retails stores in both Malibu and Maui.  
+<br>
+<br>
+
+Our two newest additions to the Palm family include Kinga Gyorkei (left) and Whitney Grounds (right). 
+
+
+
+
+<h3 class="text-center">Upcoming Events</h3>
+
+<div>
+        <div class="container">
+                    <div class="card-deck">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h5 class="card-title">Earth Day Beach Clean Up</h5>
+                                <p class="card-text">
+                                    Save the Date. October 27 2019.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">RSVP</a>
+                                
+                            </div>
+                        </div>
+        
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h5 class="card-title">Fall Pop Up Fashion Show </h5>
+                                <p class="card-text">
+                                    Save the date. Ocotber 17 2019.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">RSVP</a>
+                                
+                            </div>
+                        </div>
+        
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h5 class="card-title">Annual Yard Sample Sale</h5>
+                                <p class="card-text">
+                                    Save the Date. November 1st.
+                                    <br>
+                            
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">RSVP</a>
+                                    </div>
+                         
+                            </div>
+                        </div>
+                    </div>
+            <div class="card-deck mt-20">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h5 class="card-title">Boozy brunch</h5>
+                        <p class="card-text">
+                            Save the date. November 10th.
+                            <br> Join us for brunch and  sneak peak at our most current collection<br />
+                            
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                            <a href="#" class="btn btn-primary">RSVP</a>
+                        
+                    </div>
+                </div>
+        
+                
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h5 class="card-title"> Annual Fund Raiser</h5>
+                        <p class="card-text">
+                           Save the Date. October 31st.
+                           <br>Join us for happy hour followed by a fashion show fund raising party. All proceeds donated to charity.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                            <a href="#" class="btn btn-primary">RSVP</a>
+                       
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h5 class="card-title">Maui Flagship Store Location</h5>
+                        <p class="card-text">
+                            Save the date. Novemeber 20th. Come celebrate the grand opening of our Maui Store location.<br />
+                            
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                            <a href="#" class="btn btn-primary">RSVP</a>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="card-deck text-center">
+        <div class="mx-auto d-block col-md-4 col-lg-3">
+                <div class="card" style="width: 15rem;">
+                        <img src="card1.jpeg" class="card-img-top" alt="card1">
+                        <div class="card-body">
+                          <h5 class="card-title">Earth Day Beach Clean Up</h5>
+                          <p class="card-text">Palm is celebrating Earth Day by hosting a beach clean-up followed by a yard party mixer.</p>
+                          <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                
+            
+<div class="mx-auto d-block col-md-4 col-lg-3">
+<div class="card" style="width: 15rem;">
+        <img src="card2.jpeg" class="card-img-top" alt="card2">
+        <div class="card-body">
+          <h5 class="card-title">Shop Our Sample Sale</h5>
+          <p class="card-text"> Join us for our yard sample sale. Shop for one of a kind sample suits and 40% off our current collection at our Malibu storefront. </p>
+          <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+</div>
+
+<div class="mx-auto d-block col-md-4 col-lg-3">
+<div class="card" style="width: 15rem;">
+<img src="card3.jpeg" class="card-img-top" alt="card3">
+<div class="card-body">
+<h5 class="card-title">Save the Date: October 22nd</h5>
+              <p class="card-text"> Join us on October 22nd for a sneak preview of our new 2020 sustainability line. </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+      
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    
+
+
+                                   
+        
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+]
+    </body>
+
+</html>
+            

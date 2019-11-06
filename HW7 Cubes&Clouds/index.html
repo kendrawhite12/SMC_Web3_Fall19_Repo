@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <link href="album.css" rel="stylesheet">
+    
+    <script src="https://www.kirupa.com/js/prefixfree.min.js"></script>
+ 
+<style>
+#mainContent {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.cloud {
+    position: absolute;
+}
+h1 {
+    font-family: 'Rubik', sans-serif;
+}
+#bigcloud {
+    margin-right:0px;
+    margin-left:0px;
+    display:block;
+    animation: bobble 2s infinite;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+#smallcloud {
+    animation: bobble 4s infinite;
+    margin-top: 65px;
+    margin-left: 200px;
+}
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(50px, 50px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(50px, 50px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.cube__face--front  { transform: rotateY(  0deg); }
+.cube__face--right  { transform: rotateY( 90deg); }
+.cube__face--back   { transform: rotateY(180deg); }
+.cube__face--left   { transform: rotateY(-90deg); }
+.cube__face--top    { transform: rotateX( 90deg); }
+.cube__face--bottom { transform: rotateX(-90deg); }
+
+.spinner div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 120px;
+    font-size: 100px;
+}
+
+.spinner .face1 { 
+    -webkit-transform: translateZ(60px);
+    -ms-transform: translateZ(60px);
+    transform: translateZ(60px);
+}
+.spinner .face2 { 
+    -webkit-transform: rotateY(90deg) translateZ(60px); 
+    -ms-transform: rotateY(90deg) translateZ(60px); 
+    transform: rotateY(90deg) translateZ(60px); 
+}
+.spinner .face3 { 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
+    transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
+}
+.spinner .face4 { 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
+}
+.spinner .face5 { 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
+}
+.spinner .face6 { 
+    -webkit-transform: rotateX(-90deg) translateZ(60px); 
+    -ms-transform: rotateX(-90deg) translateZ(60px); 
+    transform: rotateX(-90deg) translateZ(60px); 
+}
+
+.spinner {
+    -webkit-animation: spincube 12s ease-in-out infinite;
+    animation: spincube 12s ease-in-out infinite;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+
+}
+
+@-webkit-keyframes spincube {
+    16%      { -webkit-transform: rotateY(-90deg);                }
+    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -webkit-transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -webkit-transform: rotateY(90deg) rotateX(90deg);  }
+    83%      { -webkit-transform: rotateX(90deg);                 }
+}
+@keyframes spincube {
+    16%      { -ms-transform: rotateY(-90deg); transform: rotateY(-90deg); }
+    33%      { -ms-transform: rotateY(-90deg) rotateZ(90deg); transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -ms-transform: rotateY(180deg) rotateZ(90deg); transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -ms-transform: rotateY(90deg) rotateX(90deg); transform: rotateY(90deg) rotateX(90deg); }
+    83%      { -ms-transform: rotateX(90deg); transform: rotateX(90deg); }
+}
+ </style>
+
+
+
+    
+              </div>
+              <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container d-flex justify-content-between">
+
+                  <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                    <strong>Clouded</strong>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </header>
+            
+            <main role="main">
+                  <body>
+                        <div id="mainContent">
+                                <img id="bigcloud" alt="#" class="cloud" height="154" src="https://www.kirupa.com/images/bigCloud.png" width="238">  
+                                <img id="smallcloud" alt="#" class="cloud" height="154" src="https://www.kirupa.com/images/smallCloud.png" width="238">
+                        </div>
+              <section class="jumbotron text-center">
+                <div class="container">
+                  <h1 class="jumbotron-heading">Clouds and Cubes</h1>
+                  <div id="stage" style="width: 200px; height: 200px;">
+                        <div class="spinner">
+                            <div class="face1">1</div>
+                            <div class="face2">2</div>
+                            <div class="face3">3</div>
+                            <div class="face4">4</div>
+                            <div class="face5">5</div>
+                            <div class="face6">6</div>
+                        </div>
+                    </div>
+                  <p>
+                    <a href="#" class="btn btn-primary my-2">Browse 2D Gallery</a>
+                    <a href="#" class="btn btn-secondary my-2">Browse 3D Gallery</a>
+                  </p>
+            
+              <div class="album py-5 bg-light">
+                <div class="container">
+            
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <img src="https://img-new.cgtrader.com/items/786312/7eba115336/low-poly-cumulus-clouds-pack-2-3d-model-low-poly-obj-mtl-fbx-blend.png" width="100%" height="225>
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                            <img src="https://img1.cgtrader.com/items/1897910/bd72ab47d3/volumetric-clouds-vdb-3d-model.jpg" width="100%" height="225>
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                        <img src="https://cdn6.f-cdn.com/contestentries/1129507/10082605/59bc82e4814ba_thumb900.jpg" width="100%" height="225>    
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

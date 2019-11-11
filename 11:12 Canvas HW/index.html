@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+
+<!-- MOBILE FIRST-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+ * {
+            margin: 0;
+            -webkit-user-select: none
+        }
+
+        html, body {
+            height: 100%
+        }
+
+        body {
+            background: radial-gradient(#444, #000)
+        }
+
+        .lock {
+            pointer-events: none
+        }
+
+
+        .head {
+            height: 60px;
+            line-height: 60px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 40px;
+            text-align: right;
+            color: #ddf;
+            font-family: wq, "微软雅黑", sans-serif;
+            font-size: 50px
+        }
+
+        .win-board {
+            font-family: "幼圆", "微软雅黑", sans-serif;
+            height: 60px;
+            font-weight: bolder;
+            color: #fff;
+            font-size: 60px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            width: 100%;
+            text-shadow: 0 0 15px #333
+        }
+
+        canvas {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate3d(-50%, -50%, 0)
+        }
+
+        .blackboard {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: #000;
+            margin-top: -150px;
+            margin-left: -150px
+        }
+        #score {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 22px;
+	-moz-text-shadow: 2px 2px 1px #248742;
+	-webkit-text-shadow: 2px 4px 1px #248742;
+	text-shadow: 2px 2px 1px #248742;
+}
+
+#coinTapGameContainer {
+	position: relative;
+	background-image: url("images/coin-tap-game-hud.png");
+	background-size: 100%;
+	width: 460px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 24px;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+#coinTapGameContainer canvas {
+	margin: 0;
+	padding: 0;
+	width: 460px;
+}
+h1 {
+font-size:36px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: goldenrod;
+}
+p {
+font-size: 18px;
+color:white;
+text-decoration: white;
+text-decoration-color: white;
+width:36%;
+margin-left:35px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+line-height: 1.5;
+display: block;
+
+
+}
+
+</style>
+<head>
+
+
+<body>
+        <canvas id="coinTapGame" width="460" height="230"></canvas>
+        <canvas width="800" height="800"></canvas>
+        <div>
+        </div>
+            <div class="container">
+                <h1>Coins on canvas </h1>
+                <br>
+                <br>
+  
+                <p>
+
+                
+
+                        Sprite animations can be drawn on HTML5 canvas and animated through JavaScript. Animations are useful in game and interactive application development.
+                    
+                        <img src="http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/images/coin-sprite-animation-sprite-sheet.png">
+                         Several frames of an animation can be included in a single image and using HTML5 canvas and JavaScript we can draw a single frame at a time. 
+                      
+                     
+                         After learning how to create a sprite animation on HTML5 canvas we can now use the game loop and animation to create a game. Check out the link below to view our tutorial.
+                         <br>
+                         <br>
+                         <a href="http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/">Visit the coin game HTML tutorial</a>
+                </p>
+            </div>
+            </div>
+            </div>
+            <div class="coinTapGame">
+            <canvas id="coinTapGame" width="460" height="230"></canvas>
+        </div>
+        <script src="coin-tap-game.js"></script>
+        <body data-rsssl=1>
+                <canvas id="myCanvas" width="450" height="450">
+                    <canvas id="OtherCanvas" height="450" width="450"></canvas>
+                                <img src="https://i.pinimg.com/originals/cc/5b/f0/cc5bf098b33c4d30e93af302e4967d81.jpg" >
+                        </canvas>
+                 
+              </div>
+            
+                <script>
+            var mainCanvas = document.querySelector("#OtherCanvas");
+            var mainContext = mainCanvas.getContext("2d");
+             
+            var canvasWidth = mainCanvas.width;
+            var canvasHeight = mainCanvas.height;
+             
+            function drawCircle() {
+             
+            }
+            drawCircle();
+                
+                  window.requestAnimFrame = (function(callback) {
+                    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                    function(callback) {
+                      window.setTimeout(callback, 1000 / 60);
+                    };
+                  })();
+            
+                  function drawCircle() {
+                mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
+            
+                 
+                // Blue color in the background
+                mainContext.fillStyle = "#0013C3";
+                mainContext.fillRect(0, 0, canvasWidth, canvasHeight);
+                 
+                // draw the circle
+                mainContext.beginPath();
+                 
+                var radius = 175;
+                mainContext.arc(225, 225, radius, 0, Math.PI * 2, false);
+                mainContext.closePath();
+                 
+                // color in the circle
+                mainContext.fillStyle = "#FFEC00";
+                mainContext.fill();
+            }
+            drawCircle();
+            mainContext.closePath();
+            
+                  function drawRectangle(myRectangle, context) {
+                    context.beginPath();
+                    context.rect(myRectangle.x, myRectangle.y, myRectangle.width, myRectangle.height);
+                    context.fillStyle = '#F10000';
+                    context.fill();
+                    context.lineWidth = myRectangle.borderWidth;
+                    context.strokeStyle = 'black';
+                    context.stroke();
+                  }
+                  function animate(myRectangle, canvas, context, startTime) {
+                    // update
+                    var time = (new Date()).getTime() - startTime;
+            
+                    var linearSpeed = 100;
+                    // pixels / second
+                    var newX = linearSpeed * time / 1000;
+            
+                    if(newX < canvas.width - myRectangle.width - myRectangle.borderWidth / 2) {
+                      myRectangle.x = newX;
+                    }
+            
+                    // clear
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+            
+                    drawRectangle(myRectangle, context);
+            
+                    // request new frame
+                    requestAnimFrame(function() {
+                      animate(myRectangle, canvas, context, startTime);
+                    });
+                  }
+                  
+                  var canvas = document.getElementById('myCanvas');
+                  var context = canvas.getContext('2d');
+            
+                  var myRectangle = {
+                    x: 0,
+                    y: 75,
+                    width: 100,
+                    height: 50,
+                    borderWidth: 5
+                  };
+            
+                  drawRectangle(myRectangle, context);
+            
+                  // wait one second before starting animation
+                  setTimeout(function() {
+                    var startTime = (new Date()).getTime();
+                    animate(myRectangle, canvas, context, startTime);
+                  }, 1000);
+                  
+                  var mainCanvas = document.getElementById("myCanvas");
+            var mainContext = mainCanvas.getContext('2d');
+             
+            var canvasWidth = mainCanvas.width;
+            var canvasHeight = mainCanvas.height;
+             
+            var angle = 0;
+             
+            var requestAnimationFrame = window.requestAnimationFrame || 
+                                        window.mozRequestAnimationFrame || 
+                                        window.webkitRequestAnimationFrame || 
+                                        window.msRequestAnimationFrame;
+             
+            function drawCircle() {
+                mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
+                 
+                // color in the background
+                mainContext.fillStyle = "#0013C3";
+                mainContext.fillRect(0, 0, canvasWidth, canvasHeight);
+                 
+                // draw the circle
+                mainContext.beginPath();
+                 
+                var radius = 25 + 150 * Math.abs(Math.cos(angle));
+                mainContext.arc(225, 225, radius, 0, Math.PI * 2, false);
+                mainContext.closePath();
+                 
+                // color in the circle
+                mainContext.fillStyle = "#FFEC00";
+                mainContext.fill();
+                  
+                angle += Math.PI / 64;
+                 
+                requestAnimationFrame(drawCircle);
+            }
+            drawCircle();
+                </script>
+              </body>
+            </html>      
+    </body>
+</html>
+   

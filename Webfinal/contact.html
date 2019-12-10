@@ -61,7 +61,7 @@
    
                 
          <nav class="navbar-brand" class="img-responsive">
-         <img src="almondlogo.png" class="center-logo" alt=logo>
+         <img src="almondlogo.png" class="mx-auto d-block" alt=logo>
         </div>
        
       
@@ -124,21 +124,46 @@
                 
                 </nav>
             </header>
+            <img src="shop_2.png"  class="mx-auto d-block" width="1537" height="1025" alt="Almond_Surfirder_1">
+       
 
       
-      
+
 
            
 
-                    <img src="https://cdn.shopify.com/s/files/1/0203/7640/files/Almond_Retail_Store_grande.jpg?v=1494458896" width="640" height="360" class="padding-contact" alt="Almond_Surfirder_1">
+                    <img src="https://cdn.shopify.com/s/files/1/0203/7640/files/Almond_Retail_Store_grande.jpg?v=1494458896" class="mx-auto d-block container-padding"  width="660" height="380" alt="Almond_Surfirder_1">
 
             
                     <h5 class="text-center">CONTACT US</h5>
                     <h4 class="text-center">1720 Santa Ana Ave.<br>
                          #A Costa Mesa,CA 92627<br>
                          949-270-6604</h4>
-               
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13287.644089957113!2d-117.914629!3d33.633549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x883260b10a56cb16!2sAlmond%20Surfboards!5e0!3m2!1sen!2sus!4v1575781389269!5m2!1sen!2sus" width="660" height="380" frameborder="0" class="mx-auto d-block"  style="border:0;" allowfullscreen=""></iframe>
 
+                    
+
+                    <footer>
+                            <div class="container-strip-contact"></div>    
+                            <div class="footer bg-light py-5">
+                                    <div class="container text-center pt-5">
+
+                                        <p class="small font-italic">© Almond Surfboards<br>
+                                        
+
+                                                1720 Santa Ana Ave., #A
+                                                <br>
+                                                Costa Mesa, CA 92627
+                                                <br>
+                                                info@almondsurfboards.com
+                                                <br>
+                                                
+                                                Theme by Troop | Ecommerce Software by Shopify</p>
+                                     
+                                    </div>
+                                </div>
+                            
+                            </footer>
 
                 </div>
             </div>
@@ -147,6 +172,92 @@
 
                 
 <!-- Optional JavaScript -->
+        <div id="cartbutton">
+            <a href="checkout.html"><button class="cart" onclick="rps()"><img class="b-image"
+                        src="cart.png"></button></a>
+        </div>
+
+        <div id="cartcounter">
+            <div class="counter">
+                <h6 id="cartnumber">0</h6>
+            </div>
+        </div>
+
+
+
+        </main>
+
+
+
+
+
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+
+
+            $(function () {
+                /* Initialize Carousel */
+                var paused = 0;
+                $('#myCarousel').carousel({
+                    interval: 1000,
+                    pause: 0
+                });
+
+                /* Play trigger */
+                $('#toggleCarousel').click(function () {
+                    var state = (paused) ? 'cycle' : 'pause';
+                    paused = (paused) ? 0 : 1;
+                    $('#myCarousel').carousel(state);
+                    $(this).find('i').toggleClass('fa-play fa-pause');
+                });
+            });
+
+
+
+
+
+            $(document).ready(function () {
+                $('#list').click(function () {
+                    event.preventDefault();
+                    $('#products .item').addClass('list-group-item');
+                });
+                $('#grid').click(function () {
+                    event.preventDefault();
+                    $('#products .item').removeClass('list-group-item');
+                });
+            });
+
+
+
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+
+
+            $('.alert').alert()
+
+            $(document).ready(function () {
+                $(".navbar-toggler").click(function () {
+                    $(".navbar-toggler-icon").toggleClass("active");
+                });
+            });
+        </script>
     
         <script> 
         

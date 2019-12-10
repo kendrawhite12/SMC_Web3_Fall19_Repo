@@ -20,6 +20,11 @@ margin-right:0px;
 margin-top: 0px;
 margin-bottom: 0px;
 }
+.container-strip {
+width: 100%;
+background-color: #F5F0ED;
+height: 400px;
+}
 
 .sidebar {
 height: 50%;
@@ -173,21 +178,25 @@ margin-right: auto;
     height: auto;
 }
 
+
 .btn {
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Questrial', sans-serif;
 background-color:#C8962C;
 color:#000;
-font-size: 18px;
+font-size: .85rem;
 border: #C8962C;
-margin-left: auto;
-margin-right: auto;
-display: block;
-width:45%
+width:60%
+
 }
+
 .center-logo {
 display: block;
 margin-left: auto;
 margin-right: auto;
+}
+.img-space {
+margin-top: 50px; 
+padding-top: 50px; 
 }
 
 
@@ -215,6 +224,13 @@ background-color:white;
 border-radius: 90%!important;
 height: 400px;
 }
+.padding-strip{
+margin-bottom:200px;
+
+}
+.padding-category {
+margin-top:50px;
+}
 
 body {
 margin-left:auto;
@@ -224,8 +240,11 @@ display: block;
 
    
 h1 {
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 36px;
+text-align: center;
+padding-top:65px;
+padding-bottom: 65px;
+font-size: 2.75rem;
+font-family: 'Questrial', sans-serif;
 font-weight: 400px; 
 
 }
@@ -235,16 +254,16 @@ padding-left: 100px;
 padding-top: 150px;
 padding-bottom: 0px;
 font-family: 'Questrial', sans-serif;
-font-size: 2rem;
+font-size: 2.5rem;
 
 }
 
 h3 {
-padding-top: 300px;
-font-weight: 500px;
-font-family: 'Source Sans Pro', sans-serif;
+padding-top: 75px;
+font-family: 'Questrial', sans-serif;
 text-align: center;
-font-size: 1.25rem;
+font-size: 1.5rem;
+font-weight:600;
 }
 
 h4 {
@@ -275,22 +294,54 @@ width: 100%;
 }
 
 p {
-margin-left: 15px;
-padding-bottom: 15px; 
-font-size: 17px;
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Questrial', sans-serif;
+margin-left: .95rem;
 text-align: center;
+padding-bottom: 1rem; 
+font-size: 17px;
 line-height: 1.6rem;
 width: 95%;
+}
+
+.checkout-title {
+font-family: 'Questrial', sans-serif;
+padding-top: 50px; 
+font-weight:600;
+text-align: left;
+font-size: 2rem;
+font-weight: 900px; 
+}
+.modal-p {
+width:100%;
+font-family: 'Questrial', sans-serif;
+font-size: 1.25rem;
+text-align: left;
+line-height: 1.8rem;
+padding-top: 50px;
+padding-bottom: 50px; 
+
 }
 .center-logo {
 margin-left: auto;
 margin-right: auto; 
 display: block;
 }
+.custom-container {
+margin-left: auto;
+margin-right: auto; 
+display: block;
+width: 1024px; 
+height: 909px;
+}
+.container-padding {
+margin-top: 50px; 
+}
+
+
 
 .padding-contact {
-display: block;
+
+display: inline-block;
 margin-left: auto;
 margin-right: auto;
 padding-right: 150px;
@@ -344,3 +395,121 @@ padding-top:50px;
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+  /* Bootstrap Grid Template */
+
+  .thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #CDD8D2;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+.bloc_left_price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+.category_block li:hover {
+    background-color: #007bff;
+}
+.category_block li:hover a {
+    color: #ffffff;
+}
+.category_block li a {
+    color: #343a40;
+}
+.add_to_cart_block .price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.add_to_cart_block .price_discounted {
+    color: #343a40;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 140%;
+}
+.product_rassurance {
+    padding: 10px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+.product_rassurance .list-inline {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product_rassurance .list-inline li:hover {
+    color: #343a40;
+}
+.reviews_product .fa-star {
+    color: gold;
+}
+.pagination {
+    margin-top: 20px;
+}
+footer {
+    background: #CDD8D2;
+    padding: 40px;
+}
+footer a {
+    color: #CDD8D2!important
+}
+.progress {
+margin-right:83px;
+margin-left:83px;
+}

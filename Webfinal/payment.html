@@ -166,6 +166,16 @@
         <div class="container">
             <div class="py-5 text-center">
 
+        <div id="cartbutton">
+            <a href="checkout.html"><button class="cart" onclick="rps()"><img class="b-image"
+                        src="cart.png"></button></a>
+        </div>
+
+        <div id="cartcounter">
+            <div class="counter">
+                <h6 id="cartnumber">0</h6>
+            </div>
+        </div>
 
 
             </div>
@@ -179,21 +189,21 @@
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
                                 <h6 class="my-0">Joy Fin</h6>
-                                <small class="text-muted">Brief description</small>
+                                
                             </div>
                             <span class="text-muted">$65</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
                                 <h6 class="my-0">Mucho Aloha R Series</h6>
-                                <small class="text-muted">Brief description</small>
+                                
                             </div>
                             <span class="text-muted">$350</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                                <h6 class="my-0">Third item</h6>
-                                <small class="text-muted">Brief description</small>
+                                <h6 class="my-0">Black Almond</h6>
+                                
                             </div>
                             <span class="text-muted">$370</span>
                         </li>
@@ -346,8 +356,8 @@
                         <hr class="mb-4">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="same-address">
-                            <label class="custom-control-label" for="same-address">Shipping address is the same as my
-                                billing address</label>
+                            <label class="custom-control-label" for="same-address">Billing address is the same as my
+                                shipping address</label>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="save-info">
@@ -399,11 +409,14 @@
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit" id="register" value="Register" disabled="disabled">Continue to checkout</button>
                         <div class="padding-category"></div>
                     </form>
                 </div>
             </div>
+
+         
+
 
 
         <style>
@@ -418,7 +431,10 @@
 
 
 
+
         <script>
+
+
             // Example starter JavaScript for disabling form submissions if there are invalid fields
             (function () {
                 'use strict'

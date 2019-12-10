@@ -228,8 +228,18 @@ height: 400px;
 margin-bottom:200px;
 
 }
+.spacer {
+margin-top:200px;
+}
 .padding-category {
 margin-top:50px;
+}
+.container-strip-second{
+width: 100%;
+background-color: #F5F0ED;
+height: 400px;
+margin-top: 200px;  
+margin-bottom:200px;
 }
 
 body {
